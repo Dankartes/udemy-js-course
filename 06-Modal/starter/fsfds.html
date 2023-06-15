@@ -1,0 +1,232 @@
+<script>
+    jQuery(document).ready(function($) {
+      $(".clickable-row").click(function() {
+          window.location = $(this).data("href");
+      });
+  });
+  
+  
+    
+    $(document).ready(function(){
+  
+      var inputs = document.getElementsByClassName("filter");
+  
+      inputs[0].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[1].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[2].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[3].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[4].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[5].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[6].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[7].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[8].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[9].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[10].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      inputs[11].addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementsByClassName("search")[0].click();
+        }
+      });
+      
+  
+    });
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();   
+    });
+  
+    $('[data-toggle="tooltip"]').tooltip({
+      trigger : 'hover'
+    });
+    
+  </script>
+  <style type="text/css">.container {
+    width:99%;
+  }
+    .dot {
+      height: 10px;
+      width: 10px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .col-fx-height {
+      height: calc(100vh - 25vh);
+      ;
+      overflow-y: scroll;
+    }
+    .col-fx-height::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #337ab7;
+    }
+    .col-fx-height::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      border-radius: 10px;
+    }
+    .col-fx-height::-webkit-scrollbar {
+      border-radius: 10px;
+      width: 7px;
+    }
+    .padding0  {
+      padding-top: 0px !important;
+      padding-bottom: 0px !important;
+    }
+    .bottom0 {
+      margin-bottom:0px !important;
+    }
+    .backgroundcolor {
+      background: #f5f5f5;
+    }
+    .tr:hover {
+      background-color: #ffffff;
+    }
+  </style>
+  <div class="container">
+  <div class="layoutmanager layout-container layout-column layout-column-one layout-column-editable" style="margin-left: 10px; margin-top: 10px; margin-right: 10px;">
+  <div class="layoutmanager layout-container layout-column layout-column-one layout-column-editable panel panel-default">
+  <div class="layoutmanager layout-container layout-column layout-column-one layout-column-editable panel-heading">
+  <h3 class="panel-title">Listă&nbsp;cereri&nbsp;<button class="btn btn-main" data-bpm-controltype="downloadlink" data-bpm-event="DownloadList" data-bpm-parameter="DownloadExcel" data-bpm-submit="true" style="float: right; margin-top: -6px; cursor: pointer; margin-right: 5px;"><span class="glyphicon glyphicon-download-alt"></span></button><button class="btn btn-second" data-bpm-controltype="popup" data-bpm-event="AddRequest" data-bpm-metadata="51" data-modal-size="xl" style="float: right; margin-top: -6px; cursor: pointer; margin-right: 5px;"><span class="glyphicon glyphicon-plus"></span></button><button class="btn   R{42}" data-bpm-event="AvailabilityFilters" data-bpm-submit="true" style="float: right; margin-top: -6px; margin-right: 5px;" title="Arata filtrele" type="button"><span class="glyphicon glyphicon-filter"></span></button></h3>
+  </div>
+  
+  <div class="panel-body" style="height: 90%; width: 100%; padding-bottom: 10px;">
+  <table border="0" cellpadding="1" cellspacing="1" class="table table-condensed" style="margin-bottom: 0px;">
+      <thead>
+          <tr data-bpm-availability="dynamic" data-bpm-availabilityrule="36">
+              <th style="width: 3%;">#</th>
+              <th><span style="font-size: 12px;">Tip cerere</span><input autocomplete="off" class="form-control input-sm filter" data-bpm-parameter="FilterRequestDetails.name" /></th>
+              <th style="width: 7%;"><span style="font-size: 12px;">Status</span><select autocomplete="off" class="form-control input-sm filter" data-bpm-controltype="combobox" data-bpm-listofvalues="54" data-bpm-parameter="FilterRequestDetails.stateId" type="text"></select></th>
+              <th style="width: 7%;"><span style="font-size: 12px;">Stadiu dosar</span><input autocomplete="off" class="form-control input-sm filter" data-bpm-parameter="FilterRequestDetails.subStatus" /></th>
+              <th style="width: 5%;"><span style="font-size: 12px;">Nr. intrare</span><input autocomplete="off" class="form-control input-sm filter" data-bpm-parameter="FilterRequestDetails.no" /></th>
+              <th style="width: 5%;"><span style="font-size: 12px;">Nr. ieșire</span><input autocomplete="off" class="form-control input-sm filter" data-bpm-parameter="FilterRequestDetails.noFinal" /></th>
+              <th style="width: 12%;"><span style="font-size: 12px;">Categorie</span><select autocomplete="off" class="form-control input-sm filter" data-bpm-controltype="combobox" data-bpm-listofvalues="86" data-bpm-parameter="FilterRequestDetails.categoryId" type="text"></select></th>
+              <th style="width: 10%;"><span style="font-size: 12px;">Responsabil</span><input autocomplete="off" class="form-control input-sm filter" data-bpm-controltype="combobox" data-bpm-listofvalues="55" data-bpm-parameter="FilterRequestDetails.userGuid" data-bpm-submit="true" type="text" /></th>
+              <th style="width: 10%;"><span style="font-size: 12px;">Cetățean</span><input autocomplete="off" class="form-control input-sm filter" data-bpm-parameter="FilterRequestDetails.contactName" /></th>
+              <th style="width: 11%;">
+              <div class="row" style="margin-left: 0px; margin-right: 0px; margin-top: 0px !important;"><span style="font-size: 12px;">Data adăugare</span></div>
+  
+              <div class="row" style="margin-left:0px;margin-right:0px; padding:0px; margin-top:0px !important;">
+              <div class="col-md-6" style="padding:0px;"><input autocomplete="off" class="form-control input-sm filter" data-bpm-controltype="datepicker" data-bpm-parameter="FilterRequestDetails.createdOnFrom" placeholder="De la" type="text" /></div>
+  
+              <div class="col-md-6" style="padding: 0px;"><input autocomplete="off" class="form-control input-sm filter" data-bpm-controltype="datepicker" data-bpm-parameter="FilterRequestDetails.createdOnUntil" placeholder="Până la" type="text" /></div>
+              </div>
+              </th>
+              <th style="width: 10%;"><span style="font-size: 12px;">Zile de soluționare rămase</span>
+              <div class="row" style="margin-left: 0px; margin-right: 0px; padding: 0px; margin-top: 0px !important;"><input autocomplete="off" class="form-control input-sm filter" data-bpm-parameter="FilterRequestDetails.remainingDays" placeholder="Număr de zile" /></div>
+              </th>
+              <th scope="col" style="width: 7%; vertical-align: bottom; text-align: right;"><button class="btn btn-main" data-bpm-event="RemoveFilters" data-bpm-submit="true"><span class="glyphicon glyphicon-remove-sign" style="cursor: pointer;" title="Reseteaza filtrele"></span></button><button class="btn btn-main search" data-bpm-event="Search" data-bpm-submit="true" style="margin-left: 5px;"><span class="glyphicon glyphicon-search" style="cursor: pointer;" title="Cauta"></span></button></th>
+          </tr>
+          <tr data-bpm-availability="dynamic" data-bpm-availabilityrule="37">
+              <th style="width: 3%;">#</th>
+              <th>Tip</th>
+              <th style="width: 7%;">Status</th>
+              <th style="width: 7%;">Stadiu dosar</th>
+              <th style="width: 5%;">Nr. intrare</th>
+              <th style="width: 5%;">Nr. ieșire</th>
+              <th style="width: 12%;">Categorie</th>
+              <th style="width: 10%;">Responsabil</th>
+              <th style="width: 10%;">Cetățean</th>
+              <th style="width: 11%;">Data adăugare</th>
+              <th style="width: 10%;">Zile de soluționare rămase</th>
+              <th scope="col" style="width: 7%; vertical-align: bottom; text-align: right;"></th>
+          </tr>
+      </thead>
+  </table>
+  
+  <div style="overflow-y: auto;">
+  <table border="0" cellpadding="1" cellspacing="1" class="table table-condensed tableTextEllipsis table-hover">
+      <tbody>
+          <tr class="table clickable-row " data-bpm-controltype="repeater" data-bpm-parameter="RequestDetailsList" data-href="#/bpmInstanceView?domainId=p{DomainId}&amp;id=p{appId}" style="width: 100%; border-top: 0px solid white; border-bottom: 0px solid white; cursor: pointer; max-height: 39px;">
+              <td style="width: 3%; white-space: unset; text-overflow: unset; overflow: visible;">R{43}</td>
+              <td style="overflow: visible; text-overflow: unset; white-space: unset;"><span class="badge" data-bpm-availability="dynamic" data-bpm-availabilityrule="765" style="background-color: var(--main);">PF</span><span class="badge" data-bpm-availability="dynamic" data-bpm-availabilityrule="766" style="background-color: var(--second);">PJ</span>&nbsp;&nbsp;p{name}</td>
+              <td style="width: 7%; overflow: visible; text-overflow: unset; white-space: unset;"><span class="dot" style="r{659}"></span>&nbsp;r{453}&nbsp;</td>
+              <td style="width: 7%; white-space: unset; text-overflow: unset; overflow: visible;">p{subStatus}</td>
+              <td style="width: 5%; white-space: unset; text-overflow: unset; overflow: visible;">p{no}</td>
+              <td style="width: 5%; white-space: unset; text-overflow: unset; overflow: visible;">p{noFinal}</td>
+              <td style="width: 12%; white-space: unset; text-overflow: unset; overflow: visible;"><span title="p{categoryName}">p{categoryName}</span></td>
+              <td style="width: 10%; overflow: visible; text-overflow: unset; white-space: unset;">r{455}</td>
+              <td style="width: 10%; overflow: visible; text-overflow: unset; white-space: unset;">p{contactName}</td>
+              <td style="width: 11%; white-space: unset; text-overflow: unset; overflow: visible;">p{createdOn}</td>
+              <td style="width: 10%; white-space: unset; text-overflow: unset; overflow: visible;">r{775}</td>
+              <td scope="col" style="width: 7%; vertical-align: bottom; text-align: right; text-overflow: unset; white-space: unset; overflow: visible;"></td>
+          </tr>
+          <tr data-bpm-availability="dynamic" data-bpm-availabilityrule="398" style="border-top: 0px solid white;">
+              <td colspan="12" style="text-align: center; border-top: 0px solid white;"><strong><em>Lista este goala.</em></strong></td>
+          </tr>
+      </tbody>
+  </table>
+  </div>
+  
+  <table border="0" cellpadding="1" cellspacing="1" class="table-responsive-1col table" data-bpm-availability="dynamic" data-bpm-availabilityrule="399" style="width: 100%; max-width: calc(100vw - 17px); bottom: 0px;">
+      <thead>
+          <tr class="paginationMenu" data-bpm-availability="dynamic" style="background: rgb(255, 255, 255);">
+              <th style="width: 5%; border-bottom-width: 0px;"></th>
+              <th style="width: 30%; border-bottom-width: 0px;">p{TotalEntities} rezultat(e)<button class="btn btn-main" data-bpm-event="PreviousPage" data-bpm-readonly="dynamic" data-bpm-readonlyrule="40" data-bpm-submit="true" style="padding-top: 5px; float: right;" title="Pagina anterioara"><span class="glyphicon glyphicon-menu-left" style="cursor: pointer;" title="PPagina anterioara"></span></button></th>
+              <th style="width: 10%; text-align: center; vertical-align: middle; border-bottom-width: 0px;">p{PageNumber} / p{TotalPageNumber}</th>
+              <th style="width: 25%; border-bottom-width: 0px;"><button class="btn btn-main" data-bpm-event="NextPage" data-bpm-readonly="dynamic" data-bpm-readonlyrule="41" data-bpm-submit="true" style="padding-top: 5px; float: left;" title="Pagina urmatoare"><span class="glyphicon glyphicon-menu-right" style="cursor: pointer;" title="Pagina urmatoare"></span></button></th>
+              <th style="width: 10%; text-align: right; vertical-align: middle; border-bottom-width: 0px;">Alege pagina</th>
+              <th style="width: 5%; border-bottom-width: 0px; "><input class="form-control input-sm" data-bpm-parameter="ChoosePage" /></th>
+              <th style="width: 5%; border-bottom-width: 0px;"><button class="btn btn-main" data-bpm-event="ChoosePage" data-bpm-submit="true" title="Confirma pagina"><span class="glyphicon glyphicon-ok" style="cursor: pointer;" title="Confirma pagina"></span></button></th>
+          </tr>
+      </thead>
+  </table>
+  </div>
+  </div>
+  </div>
+  </div>
+  
